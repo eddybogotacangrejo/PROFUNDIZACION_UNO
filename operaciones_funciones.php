@@ -23,6 +23,11 @@
          background-color: #ED8824;
          padding: 10px 20px;
         }
+        input[type="reset"]{
+         border: 0;
+         background-color: #ED8824;
+         padding: 10px 20px;
+        }        
         .error{
           background-color: #FF9185;
           font-size: 12px;
@@ -43,7 +48,7 @@
   <body>
       <H1>OPERACIONES BASICAS CON FUNCIONES EN PHP</H1>
       <H2>OPERACIONES NORMALES EN PHP</H2>
-      <form action="validaciones_funciones.php" metod="POST">
+      <form action="LLAMAR_FUNCIONES.php" method="POST">
          <select name="operador">
            <option value="+">+</opcion>
            <option value="-">-</opcion>
@@ -61,20 +66,7 @@
         <p>
             <input type="submit" value="ENVIAR">
             <input type="reset" value="BORRAR">
-        </p>   
-        <?php
-          include_once('FUNCIONES_OPEREACIONES.php');
-          $ope = new calcula();
-          $n1=$_POST['n1'];
-          $n2=$_POST['n1'];
-          $operador=$_POST['operador'];
-          switch($ope){
-              case "+": echo "<p>".$n1." + ".$n2." = ".$ope->sumar($n1,$n2)."</p>";break;  
-              case "-": echo "<p>".$n1." - ".$n2." = ".$ope->restar($n1,$n2)."</p>";break; 
-              case "-": echo "<p>".$n1." * ".$n2." = ".$ope->multiplicar($n1,$n2)."</p>";break;
-              case "-": echo "<p>".$n1." / ".$n2." = ".$ope->dividir($n1,$n2)."</p>";break;
-            }
-        ?>    
+        </p>    
       </form>
   </body>
 </html>

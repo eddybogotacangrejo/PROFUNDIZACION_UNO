@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>OPERACIONCON FUNCIONES CON PHP</title>
     <style>
-        body{background-color: #264673; box-sizing: border-box; font-family: Arial;}
+        body{
+          background-color: #264673; 
+          box-sizing: border-box; 
+          font-family: Arial;
+        }
         form {
             background-color: white;
             padding: 10px;
             margin: 100px auto;
-            width: 450px;
+            width: 400px;
         } 
         input[type=text], input[type="number decimal"]{
         padding: 10px;
@@ -21,6 +25,11 @@
         input[type="submit"]{
          border: 0;
          background-color: #ED8824;
+         padding: 10px 20px;
+        }
+        input[type="reset"]{
+         border: 0;
+         background-color: #8c24ed;
          padding: 10px 20px;
         }
         .error{
@@ -38,12 +47,17 @@
           font-size: 30px;
           font-style: italic;
         }
+        h2{
+          background-color: white;
+          font-size: 30px;
+          font-style: italic;
+        }        
     </style>    
   </head>
   <body>
       <H1>OPERACIONES BASICAS CON FUNCIONES EN PHP</H1>
       <H2>OPERACIONES NORMALES EN PHP</H2>
-      <form action="validacion.php" metod="POST">
+      <form action="validacion.php" method="POST">
          <select name="operador">
            <option value="+">+</opcion>
            <option value="-">-</opcion>

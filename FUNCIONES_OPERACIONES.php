@@ -1,5 +1,6 @@
-<?PHP
-class calcula{
+<?php
+class calcula
+    {
     public function sumar($x,$y){
         return $x + $y;
     }
